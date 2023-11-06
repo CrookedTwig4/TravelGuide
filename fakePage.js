@@ -1,7 +1,7 @@
 
 var keyArray = [];
 var exceptionKeys = ["Alt","Backspace","Control","Delete","Escape","Enter","Meta","Shift","Tab","ArrowRight","ArrowLeft","ArrowUp","ArrowDown"];
-var Passwords = [["user","pass",""],["Nathan","W","Gillespie"],["Camden","J","Bradshaw"]];
+var Passwords = [["user","",""],["Nathan","W","Gillespie"],["Camden","J","Bradshaw"]];
 
 document.addEventListener('keydown', function(event) {
 
