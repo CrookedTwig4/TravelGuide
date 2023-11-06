@@ -22,6 +22,5 @@ document.addEventListener('keydown', function(event) {
 });
 
 function authenticated() {
-    document.getElementById('dot').style.color = "green";
     window.location.href = "BrickBreaker.html";
 }
