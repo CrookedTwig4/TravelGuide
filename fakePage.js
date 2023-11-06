@@ -4,7 +4,6 @@ var exceptionKeys = ["Alt","Backspace","Control","Delete","Escape","Enter","Meta
 var Passwords = [["user","",""],["Nathan","W","Gillespie"],["Camden","J","Bradshaw"]];
 
 document.addEventListener('keydown', function(event) {
-
     var validKey = true;
     for( var keyIndex = 0; keyIndex < exceptionKeys.length; keyIndex++) {
         if(event.key == exceptionKeys[keyIndex]) {
