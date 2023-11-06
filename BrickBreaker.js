@@ -136,18 +136,6 @@ function draw() {
             dy = -dy;
         } else if (y + dy > canvas.height - ballRadius) {
             if (x > paddleX && x < paddleX + paddleWidth) {
-                if (rightPressed && dx < 0) {
-                    dx *= 2;
-                }
-                if (rightPressed && dx > 0) {
-                    dx *= 0.5;
-                }
-                if (leftPressed && dx > 0) {
-                    dx *=2;
-                }
-                if (leftPressed && dx < 0) {
-                    dx *=0.5;
-                }
                 dy = -dy;
             } else {
                 isGameOver = true;
@@ -231,6 +219,20 @@ function collisionDetection() {
             }
         }
     }
+
+    // Check if the ball hits the paddle
+    if (y + dy > canvas.height - ballRadius - paddleHeight) {
+        if (x > paddleX && x < paddleX + paddleWidth) {
+            // Adjust the speed based on the position where the ball hits the paddle
+            var collisionPoint = x - (paddleX + paddleWidth / 2);
+            dx = collisionPoint * 0.2; // Adjust this multiplier to change the bounce angle
+            dy = -dy;
+        } else {
+            isGameOver = true;
+            isGameStarted = false;
+        }
+    }
 }
+
 
 draw();
