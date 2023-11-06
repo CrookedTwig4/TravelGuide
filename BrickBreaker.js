@@ -219,20 +219,6 @@ function collisionDetection() {
             }
         }
     }
-
-    // Check if the ball hits the paddle
-    if (y + dy > canvas.height - ballRadius - paddleHeight) {
-        if (x > paddleX && x < paddleX + paddleWidth) {
-            // Adjust the speed based on the position where the ball hits the paddle
-            var collisionPoint = x - (paddleX + paddleWidth / 2);
-            dx = collisionPoint * 0.2; // Adjust this multiplier to change the bounce angle
-            dy = -dy;
-        } else {
-            isGameOver = true;
-            isGameStarted = false;
-        }
-    }
 }
-
 
 draw();
