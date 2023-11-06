@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #deefff;
+}
+html {
+    background-color: rebeccapurple;
+}
+body {
+    position: relative;
+    height: auto;
+
+    background-color: rebeccapurple;
+}
+header {
+    font-size: 250%;
+    color: rebeccapurple;
+}
+footer {
+    position: relative;
+    height: 7vw;
+    vertical-align: auto;
+    top: -20px;
+}
+
+.FooterButton {
+    display: inline-block;
+    margin: 1vw 2.5vw;
+    width: auto;
+    height: 5vw;
+}
+.Button {
+    height: 5vw;
+}
+.segment {
+    border: 10px solid rebeccapurple;
+}
+#Links {
+    display: inline-block;
+}
+#Map {
+    position: relative;
+    top:-10px;
+    left:0%;
+    border: 10px solid rebeccapurple;
+    height: 35vw;
+    margin: 0;
+    padding: 0;
+}
+#gameCanvas {
+    margin: 0;
+    position: relative;
+    top: -10px;
+    border: 10px solid rebeccapurple;
+
+}

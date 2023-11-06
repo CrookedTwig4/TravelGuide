@@ -1,0 +1,31 @@
+html {
+    border: 1vw solid #663399;
+    background-color: #deefff;
+    width: auto;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    background-color: #663399;
+    height:1vw;
+}
+.Txt-Purple{
+    color: #663399;
+}
+#dot {
+    position: absolute;
+    font-size: 250%;
+    top: -3.5%;
+    left: 95%;
+    color: red;
+}
+h1 {
+    display: block;
+    text-align: center;
+    font-size: 500%;
+}
