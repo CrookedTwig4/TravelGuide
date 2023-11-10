@@ -22,5 +22,5 @@ document.addEventListener('keydown', function(event) {
 });
 
 function authenticated() {
-    window.location.href = "./Game_Hub/gameHub.html";
+    window.location.href = "../TravelGuide/Game_Hub/gameHub.html";
 }
