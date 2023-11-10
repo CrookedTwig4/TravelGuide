@@ -5,24 +5,26 @@
     <link rel="stylesheet" type="text/css" href="blackjack.css">
 </head>
 <body>
-    <h1>Blackjack (21) </h1>
+    <h1 id="Title">Blackjack</h1>
     <div class="container" id="startScreen">
-        <h2>Welcome to Canvas Blackjack Game!</h2>
+        <h2>Blackjack!</h2>
         <p>Press the button below to start playing.</p>
         <button onclick="startGame()">Start Game</button>
+        <button onclick="goToMainMenu()">Main Menu</button>
     </div>
     <div class="container" id="game" style="display: none;">
-        <canvas id="blackjackCanvas" width="800" height="400"></canvas>
+        <canvas id="blackjackCanvas" width="600" height="400"></canvas>
         <br>
-        <button onclick="dealCards()">Deal Cards</button>
         <button id="hitButton" onclick="hitMe()">Hit Me</button>
         <button id="standButton" onclick="stand()">Stand</button>
+        <div id="endingScreen" style="display: none;">
+            <h2 id="resultText"></h2>
+            <h3 id="scoreText" style="display: none;"></h3>
+            <button onclick="resetGame()">Play Again</button>
+            <button onclick="goToMainMenu()">Main Menu</button>
+        </div>
     </div>
-    <div id="endingScreen" style="display: none;">
-        <h2 id="resultText"></h2>
-        <h3 id="scoreText" style="display: none;"></h3>
-        <button onclick="resetGame()">Play Again</button>
-    </div>
+    <br><br><br>
     <script src="blackjack.js"></script>
 </body>
 </html>

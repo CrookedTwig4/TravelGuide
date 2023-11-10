@@ -59,6 +59,8 @@ function hitMe() {
 
 function stand() {
     showDealerCards = true;
+    document.getElementById('standButton').style.display = 'none';
+    document.getElementById('Title').style.marginTop = 150+'px';
     redrawHands();
     dealerTurn();
 }
@@ -66,9 +68,11 @@ function stand() {
 function checkPlayerBust() {
     const playerTotal = calculateHandValue(playerHand);
     if (playerTotal > 21) {
+        showDealerCards = true;
         endGame('Player Busts! Dealer Wins!', playerTotal, calculateHandValue(dealerHand));
     }
 }
+
 
 function checkDealerBust() {
     const dealerTotal = calculateHandValue(dealerHand);
@@ -128,12 +132,23 @@ function determineWinner() {
 }
 
 function endGame(result, playerTotal, dealerTotal) {
-    document.getElementById('resultText').innerText = result;
-    document.getElementById('endingScreen').style.display = 'block';
-    document.getElementById('hitButton').style.display = 'none';
+    const scoreText = document.getElementById('scoreText');
+    scoreText.innerText = `${playerTotal} - ${dealerTotal}`;
+    scoreText.style.display = 'block';
+
+    const resultText = document.getElementById('resultText');
+    resultText.innerText = result;
+
+    const endingScreen = document.getElementById('endingScreen');
+    endingScreen.style.display = 'block';
+
+    const hitButton = document.getElementById('hitButton');
+    hitButton.style.display = 'none';
+
+    const dealButton = document.getElementById('dealButton');
+    dealButton.style.display = 'none';
+    
     document.getElementById('standButton').style.display = 'none';
-    document.getElementById('scoreText').innerText = playerTotal + ' - ' + dealerTotal;
-    document.getElementById('scoreText').style.display = 'block';
 }
 
 function resetGame() {
@@ -143,7 +158,10 @@ function resetGame() {
     document.getElementById('endingScreen').style.display = 'none';
     document.getElementById('hitButton').style.display = 'inline';
     document.getElementById('standButton').style.display = 'inline';
+    document.getElementById('scoreText').style.display = 'none';
+    document.getElementById('Title').style.marginTop = 100+'px';
     dealCards();
+    redrawHands();
 }
 
 function redrawHands() {
@@ -177,4 +195,10 @@ function redrawHands() {
 function startGame() {
     document.getElementById('startScreen').style.display = 'none';
     document.getElementById('game').style.display = 'block';
+    resetGame();
+    redrawHands();
+}
+
+function goToMainMenu() {
+    window.location.href = "gameHub.html";
 }

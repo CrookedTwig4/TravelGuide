@@ -9,33 +9,24 @@ body {
     background-color: #f5f5f5;
 }
 
-h1 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #639;
-    font-size: 48px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
 
 .container {
     text-align: center;
     padding: 40px;
-    background-color: #fff;
+    background-color: #f5f5f5;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(51, 0, 102, 0.9);
     margin-top: 20px;
 }
 
 #game {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 canvas {
     border: 5px solid rgba(51, 0, 102, 0.5);
     border-radius: 5px;
-    margin-bottom: 20px; /* Adjust the margin bottom value */
+    margin-bottom: 10px; /* Adjust the margin bottom value */
 }
 
 button {
@@ -58,13 +49,13 @@ button:hover {
 }
 
 #resultText {
-    margin-bottom: 10px;
     color: #663399;
 }
 
 #scoreText {
     color: #663399;
 }
+
 #startScreen {
     display: flex;
     flex-direction: column;
@@ -73,17 +64,29 @@ button:hover {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #fff;
+    margin-bottom: 30px;
 }
 
 #startScreen h2 {
     margin-bottom: 20px;
     color: #639;
-    font-size: 36px;
+    font-size: 30px;
 }
 
 #startScreen p {
     color: #333;
     font-size: 18px;
     margin-bottom: 30px;
+}
+
+#Title {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: #639;
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 50px;
 }
