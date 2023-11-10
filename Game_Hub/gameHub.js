@@ -7,5 +7,5 @@ function openBrickBreaker() {
 }
 
 function openTravelGuide() {
-    window.location.href = "..//Travel_Guide/index.html";
+    window.location.href = "../index.html";
 }
