@@ -69,6 +69,8 @@ function checkPlayerBust() {
     const playerTotal = calculateHandValue(playerHand);
     if (playerTotal > 21) {
         showDealerCards = true;
+        document.getElementById('standButton').style.display = 'none';
+        document.getElementById('Title').style.marginTop = 150+'px';
         endGame('Player Busts! Dealer Wins!', playerTotal, calculateHandValue(dealerHand));
     }
 }
