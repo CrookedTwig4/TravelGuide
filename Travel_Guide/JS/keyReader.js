@@ -22,5 +22,5 @@ document.addEventListener('keydown', function(event) {
 });
 
 function authenticated() {
-    window.location.href = "crookedtwig4.github.io/Travel_Guide/Game_Hub";
+    window.location.href = "https://crookedtwig4.github.io/Travel_Guide/Game_Hub";
 }
