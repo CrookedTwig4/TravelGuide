@@ -22,5 +22,5 @@ document.addEventListener('keydown', function(event) {
 });
 
 function authenticated() {
-    window.location.href = "../../Game_Hub";
+    window.location.href = "../Game_Hub";
 }
