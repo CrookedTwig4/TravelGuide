@@ -11,7 +11,7 @@ function openTicTacToe() {
 }
 
 function openNull() {
-    window.alert = "Nah Bro";
+    window.alert("Nah Bro");
 }
 
 function openTravelGuide() {
