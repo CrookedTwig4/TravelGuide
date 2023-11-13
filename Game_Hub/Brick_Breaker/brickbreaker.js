@@ -151,5 +151,5 @@ function startGame() {
 }
 
 function goToMainMenu() {
-    window.location.href = "gameHub.html";
+    window.location.href = "../";
 }
