@@ -70,7 +70,8 @@ function checkPlayerBust() {
     if (playerTotal > 21) {
         showDealerCards = true;
         document.getElementById('standButton').style.display = 'none';
-        document.getElementById('Title').style.marginTop = 150+'px';
+        document.getElementById('Title').style.marginTop = 150+'px'
+        redrawHands();
         endGame('Player Busts! Dealer Wins!', playerTotal, calculateHandValue(dealerHand));
     }
 }
