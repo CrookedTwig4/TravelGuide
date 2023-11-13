@@ -152,6 +152,7 @@ function endGame(result, playerTotal, dealerTotal) {
     dealButton.style.display = 'none';
     
     document.getElementById('standButton').style.display = 'none';
+    redrawHands();
 }
 
 function resetGame() {
