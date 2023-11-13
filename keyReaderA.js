@@ -24,3 +24,7 @@ document.addEventListener('keydown', function(event) {
 function authenticated() {
     window.location.href = "/TravelGuide/Game_Hub/";
 }
+
+function sendData() {
+    window.postMessage({ message: "Hello from Travel_Guide!" }, "https://crookedtwig4.github.io/TravelGuide/Game_Hub");
+}

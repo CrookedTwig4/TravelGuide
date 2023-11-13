@@ -17,3 +17,9 @@ function openNull() {
 function openTravelGuide() {
     window.location.href = "../Travel_Guide";
 }
+
+window.addEventListener("message", function(event) {
+    if (event.origin === "https://crookedtwig4.github.io/TravelGuide/") {
+        console.log("Received data:", event.data);
+    }
+});
